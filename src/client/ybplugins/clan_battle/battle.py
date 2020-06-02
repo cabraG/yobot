@@ -1199,7 +1199,7 @@ class ClanBattle:
             return boss_summary
         elif match_num == 4:  # 报刀
             match = re.match(
-                r'^报刀 ?(\d+)([Ww万Kk千])? *(?:\[CQ:at,qq=(\d+)\])? *(昨[日天])? *(?:[\:：](.*))?$', cmd)
+                r'^报刀 ?(\d+)([Ww万Kk千])? *(?:[\[t]CQ:at,qq=(\d+)[\]t])? *(昨[日天])? *(?:[\:：](.*))?$', cmd)
             if not match:
                 return
             unit = {
